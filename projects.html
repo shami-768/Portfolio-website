@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
-        .nav1 ul{
+           .nav1 ul{
             display: flex;
             justify-content: center;
-            float: right;
+            flex-wrap:wrap;
             list-style-type: none;
             text-decoration: none;
-            margin-right: 250px;
             background-color: rgb(247, 220, 220);
             padding: 20px;
+            width:fit-content;
+            margin-left:200px;
+            margin:auto;
             
         }
         .nav1 li a{
@@ -74,6 +76,27 @@ border-bottom: 3px solid purple;
          font-style: normal;
         
         }
+          @media(max-width:600px){
+            .p{
+                margin:20px;
+            }
+            .p2{
+                margin:20px;
+            }
+              .p1{
+                  margin:20px;
+              }
+            .nav1 ul{
+                flex-direction:column;
+                align-items:center;
+                gap:12px;
+                display:flex;
+               justify-content:center;
+                margin:auto;
+                
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -94,3 +117,4 @@ border-bottom: 3px solid purple;
 </body>
 
 </html>
+
